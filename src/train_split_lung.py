@@ -1,12 +1,5 @@
 import numpy as np 
-import tensorflow as tf
-import pandas as pd
-from tqdm import tqdm
 import os
-from cv2 import imread, createCLAHE 
-import cv2
-from glob import glob
-import matplotlib.pyplot as plt
 from src.utils.functionsInCode import OutputModified, getData
 from src.utils.PlotMask import plotMask
 from src.utils.modelUnet import unet

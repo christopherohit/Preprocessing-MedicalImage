@@ -40,3 +40,24 @@ def PlotMetric(loss_history):
     ax2.plot(100*np.array(loss_history.history['val_binary_accuracy']), '-',
             label = 'Validation Accuracy')
     ax2.legend()
+
+def PlotTest(validation_vol, model, validation_seg):
+    pred_candidates = np.random.randint(1,validation_vol.shape[0],10)
+    preds = model.predict(validation_vol)
+
+    plt.figure(figsize=(20,10))
+
+    for i in range(0,9,3):
+        plt.subplot(3,3,i+1)
+        
+        plt.imshow(np.squeeze(validation_vol[pred_candidates[i]]))
+        plt.xlabel("Base Image")
+        
+        
+        plt.subplot(3,3,i+2)
+        plt.imshow(np.squeeze(validation_seg[pred_candidates[i]]))
+        plt.xlabel("Mask")
+        
+        plt.subplot(3,3,i+3)
+        plt.imshow(np.squeeze(preds[pred_candidates[i]]))
+        plt.xlabel("Prediction")

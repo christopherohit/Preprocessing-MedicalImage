@@ -1,4 +1,4 @@
-from keras.callbacks import ModelCheckpoint, LearningRateScheduler, EarlyStopping, ReduceLROnPlateau
+from tensorflow.keras.callbacks import ModelCheckpoint, LearningRateScheduler, EarlyStopping, ReduceLROnPlateau
 from IPython.display import clear_output
 from keras.optimizers import Adam
 import numpy as np
@@ -6,7 +6,7 @@ from src.train_split_lung import StanderizeVarible
 from sklearn.model_selection import train_test_split
 from src.train_split_lung import ChooseModel
 from src.utils.metrics import dice_coef, dice_coef_loss
-
+from src.utils.PlotMask import PlotTest, PlotMetric
 
 weight_path="{}_weights.best.hdf5".format('cxr_reg')
 
@@ -46,3 +46,5 @@ loss_history = model.fit(x = train_vol,
 
 
 clear_output()
+PlotMetric(loss_history= loss_history)
+PlotTest(validation_vol= validation_vol, model= model, validation_seg= validation_seg)
