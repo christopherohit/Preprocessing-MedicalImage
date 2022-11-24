@@ -1,1 +1,2 @@
-/home/ai_car/Preprocessing-MedicalImage/model/*
+/model/*
+__pycache__
