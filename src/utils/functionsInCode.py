@@ -40,8 +40,8 @@ def make_dataset(images, v_images, v_masks, masks, validation=False):
         for i,(image,mask) in enumerate(zip(v_images[:10000],v_masks[:10000])):
             print("\r"+str(i)+"/"+str(len(v_images)),end="")
 
-            image = Image.open(os.path.join("../input/lung-mask-image-dataset/ChestXray/val/image",image)).convert('L')
-            mask = Image.open(os.path.join("../input/lung-mask-image-dataset/ChestXray/val/mask",mask)).convert('L')
+            image = Image.open(os.path.join("/content/drive/MyDrive/Dataset/Medicine Image/ChestXray/val/image",image)).convert('L')
+            mask = Image.open(os.path.join("/content/drive/MyDrive/Dataset/Medicine Image/ChestXray/val/mask",mask)).convert('L')
 
             image = np.asarray(image.resize((128,128)))/255.
             mask = np.asarray(mask.resize((128,128)))/255.
@@ -52,8 +52,8 @@ def make_dataset(images, v_images, v_masks, masks, validation=False):
         for i,(image,mask) in enumerate(zip(images[:10000],masks[:10000])):
             print("\r"+str(i)+"/"+str(len(images)),end="")
             
-            image = Image.open(os.path.join("../input/lung-mask-image-dataset/ChestXray/train/image",image)).convert('L')
-            mask = Image.open(os.path.join("../input/lung-mask-image-dataset/ChestXray/train/mask",mask)).convert('L')
+            image = Image.open(os.path.join("/content/drive/MyDrive/Dataset/Medicine Image/ChestXray/train/image",image)).convert('L')
+            mask = Image.open(os.path.join("/content/drive/MyDrive/Dataset/Medicine Image/ChestXray/train/mask",mask)).convert('L')
 
             image = np.asarray(image.resize((128,128)))/255.
             mask = np.asarray(mask.resize((128,128)))/255.

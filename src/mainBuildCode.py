@@ -127,3 +127,38 @@ model_plotter(u_net)
 u_net.compile(optimizer="adam",loss="binary_crossentropy",metrics="accuracy")
 model_history = u_net.fit(train_generator,epochs=20,validation_data=valid_generator,steps_per_epoch = int(x.shape[0] / 64),validation_steps = int(v_x.shape[0] / 64))
 u_net.save("u_net.h5")
+
+
+i = random.randint(0,len(v_x)-1)
+
+original = v_x[i].copy()
+original_mask = v_y[i].copy()
+
+mask = u_net.predict(np.expand_dims(original,axis=0))
+
+
+segmented = np.squeeze(original).copy()
+segmented[np.squeeze(mask)<0.2] = 0
+
+plt.subplot(1,4,1)
+plt.imshow(np.squeeze(original),cmap="gray")
+plt.title("x-ray")
+plt.axis("off")
+
+plt.subplot(1,4,2)
+plt.imshow(segmented,cmap="gray")
+plt.title("segmented")
+plt.axis("off")
+
+plt.subplot(1,4,3)
+plt.imshow(np.squeeze(mask[0]),cmap="gray")
+plt.title("predicted mask")
+plt.axis("off")
+
+plt.subplot(1,4,4)
+plt.imshow(np.squeeze(original_mask),cmap="gray")
+plt.title("  original mask")
+plt.axis("off")
+
+
+plt.show()
