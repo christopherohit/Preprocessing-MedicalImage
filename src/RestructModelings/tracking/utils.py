@@ -2,7 +2,7 @@
 import numpy as np
 from typing import List
 
-from RestructModelings.structures import Instances
+from src.RestructModelings.structures import Instances
 
 
 def create_prediction_pairs(

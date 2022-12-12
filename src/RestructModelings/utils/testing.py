@@ -11,13 +11,13 @@ from packaging import version
 from torch._C import ListType
 from torch.onnx import register_custom_op_symbolic
 
-from RestructModelings import model_zoo
-from RestructModelings.config import CfgNode, LazyConfig, instantiate
-from RestructModelings.data import DatasetCatalog
-from RestructModelings.data.detection_utils import read_image
-from RestructModelings.modeling import build_model
-from RestructModelings.structures import Boxes, Instances, ROIMasks
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings import model_zoo
+from src.RestructModelings.config import CfgNode, LazyConfig, instantiate
+from src.RestructModelings.data import DatasetCatalog
+from src.RestructModelings.data.detection_utils import read_image
+from src.RestructModelings.modeling import build_model
+from src.RestructModelings.structures import Boxes, Instances, ROIMasks
+from src.RestructModelings.utils.file_io import PathManager
 
 
 """

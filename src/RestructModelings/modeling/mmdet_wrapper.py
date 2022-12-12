@@ -8,9 +8,9 @@ import torch
 from omegaconf import DictConfig, OmegaConf
 from torch import Tensor, nn
 
-from RestructModelings.layers import ShapeSpec
-from RestructModelings.structures import BitMasks, Boxes, ImageList, Instances
-from RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.layers import ShapeSpec
+from src.RestructModelings.structures import BitMasks, Boxes, ImageList, Instances
+from src.RestructModelings.utils.events import get_event_storage
 
 from .backbone import Backbone
 

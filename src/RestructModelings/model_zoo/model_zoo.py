@@ -3,9 +3,9 @@ from typing import Optional
 import pkg_resources
 import torch
 
-from RestructModelings.checkpoint import DetectionCheckpointer
-from RestructModelings.config import CfgNode, LazyConfig, get_cfg, instantiate
-from RestructModelings.modeling import build_model
+from src.RestructModelings.checkpoint import DetectionCheckpointer
+from src.RestructModelings.config import CfgNode, LazyConfig, get_cfg, instantiate
+from src.RestructModelings.modeling import build_model
 
 
 class _ModelZooUrls(object):
@@ -136,7 +136,7 @@ def get_config_file(config_path):
         str: the real path to the config file.
     """
     cfg_file = pkg_resources.resource_filename(
-        "RestructModelings.model_zoo", os.path.join("configs", config_path)
+        "src.RestructModelings.model_zoo", os.path.join("configs", config_path)
     )
     if not os.path.exists(cfg_file):
         raise RuntimeError("{} not available in Model Zoo!".format(config_path))

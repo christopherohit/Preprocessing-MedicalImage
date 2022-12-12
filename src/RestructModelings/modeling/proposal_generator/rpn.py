@@ -3,12 +3,12 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-from RestructModelings.config import configurable
-from RestructModelings.layers import Conv2d, ShapeSpec, cat
-from RestructModelings.structures import Boxes, ImageList, Instances, pairwise_iou
-from RestructModelings.utils.events import get_event_storage
-from RestructModelings.utils.memory import retry_if_cuda_oom
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.config import configurable
+from src.RestructModelings.layers import Conv2d, ShapeSpec, cat
+from src.RestructModelings.structures import Boxes, ImageList, Instances, pairwise_iou
+from src.RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.utils.memory import retry_if_cuda_oom
+from src.RestructModelings.utils.registry import Registry
 
 from ..anchor_generator import build_anchor_generator
 from ..box_regression import Box2BoxTransform, _dense_box_regression_loss

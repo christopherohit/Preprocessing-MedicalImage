@@ -1,5 +1,5 @@
 import logging
-from RestructModelings.utils.file_io import PathHandler, PathManager
+from src.RestructModelings.utils.file_io import PathHandler, PathManager
 
 
 class ModelCatalog(object):

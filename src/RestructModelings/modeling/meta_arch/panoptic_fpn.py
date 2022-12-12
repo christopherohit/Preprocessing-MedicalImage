@@ -5,8 +5,8 @@ from typing import Dict, List
 import torch
 from torch import nn
 
-from RestructModelings.config import configurable
-from RestructModelings.structures import ImageList
+from src.RestructModelings.config import configurable
+from src.RestructModelings.structures import ImageList
 
 from ..postprocessing import detector_postprocess, sem_seg_postprocess
 from .build import META_ARCH_REGISTRY

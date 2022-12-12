@@ -4,7 +4,7 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-from RestructModelings.layers import (
+from src.RestructModelings.layers import (
     CNNBlockBase,
     Conv2d,
     DeformConv,

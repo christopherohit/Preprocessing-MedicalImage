@@ -3,11 +3,11 @@ from typing import Dict, List, Optional, Tuple
 import torch
 from torch import Tensor, nn
 
-from RestructModelings.data.detection_utils import convert_image_to_rgb
-from RestructModelings.layers import move_device_like
-from RestructModelings.modeling import Backbone
-from RestructModelings.structures import Boxes, ImageList, Instances
-from RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.data.detection_utils import convert_image_to_rgb
+from src.RestructModelings.layers import move_device_like
+from src.RestructModelings.modeling import Backbone
+from src.RestructModelings.structures import Boxes, ImageList, Instances
+from src.RestructModelings.utils.events import get_event_storage
 
 from ..postprocessing import detector_postprocess
 

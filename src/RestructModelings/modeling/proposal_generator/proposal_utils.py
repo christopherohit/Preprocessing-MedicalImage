@@ -3,8 +3,8 @@ import math
 from typing import List, Tuple, Union
 import torch
 
-from RestructModelings.layers import batched_nms, cat, move_device_like
-from RestructModelings.structures import Boxes, Instances
+from src.RestructModelings.layers import batched_nms, cat, move_device_like
+from src.RestructModelings.structures import Boxes, Instances
 
 logger = logging.getLogger(__name__)
 

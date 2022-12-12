@@ -6,9 +6,9 @@ from fvcore.nn import sigmoid_focal_loss_jit
 from torch import nn
 from torch.nn import functional as F
 
-from RestructModelings.layers import ShapeSpec, batched_nms
-from RestructModelings.structures import Boxes, ImageList, Instances, pairwise_point_box_distance
-from RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.layers import ShapeSpec, batched_nms
+from src.RestructModelings.structures import Boxes, ImageList, Instances, pairwise_point_box_distance
+from src.RestructModelings.utils.events import get_event_storage
 
 from ..anchor_generator import DefaultAnchorGenerator
 from ..backbone import Backbone

@@ -11,7 +11,7 @@ import pycocotools.mask as mask_util
 import torch
 from PIL import Image
 
-from RestructModelings.structures import (
+from src.RestructModelings.structures import (
     BitMasks,
     Boxes,
     BoxMode,
@@ -21,7 +21,7 @@ from RestructModelings.structures import (
     RotatedBoxes,
     polygons_to_bitmask,
 )
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.utils.file_io import PathManager
 
 from . import transforms as T
 from .catalog import MetadataCatalog

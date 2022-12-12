@@ -4,9 +4,9 @@ import fvcore.nn.weight_init as weight_init
 import torch
 from torch import nn
 
-from RestructModelings.config import configurable
-from RestructModelings.layers import Conv2d, ShapeSpec, get_norm
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.config import configurable
+from src.RestructModelings.layers import Conv2d, ShapeSpec, get_norm
+from src.RestructModelings.utils.registry import Registry
 
 __all__ = ["FastRCNNConvFCHead", "build_box_head", "ROI_BOX_HEAD_REGISTRY"]
 

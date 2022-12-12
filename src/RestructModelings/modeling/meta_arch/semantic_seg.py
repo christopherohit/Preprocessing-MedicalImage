@@ -5,10 +5,10 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from RestructModelings.config import configurable
-from RestructModelings.layers import Conv2d, ShapeSpec, get_norm
-from RestructModelings.structures import ImageList
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.config import configurable
+from src.RestructModelings.layers import Conv2d, ShapeSpec, get_norm
+from src.RestructModelings.structures import ImageList
+from src.RestructModelings.utils.registry import Registry
 
 from ..backbone import Backbone, build_backbone
 from ..postprocessing import sem_seg_postprocess

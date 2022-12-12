@@ -9,9 +9,9 @@ from collections import OrderedDict, defaultdict
 from functools import lru_cache
 import torch
 
-from RestructModelings.data import MetadataCatalog
-from RestructModelings.utils import comm
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.data import MetadataCatalog
+from src.RestructModelings.utils import comm
+from src.RestructModelings.utils.file_io import PathManager
 
 from .evaluator import DatasetEvaluator
 

@@ -4,12 +4,12 @@ from typing import Dict
 import torch
 import torch.nn.functional as F
 
-from RestructModelings.layers import ShapeSpec, cat
-from RestructModelings.layers.roi_align_rotated import ROIAlignRotated
-from RestructModelings.modeling import poolers
-from RestructModelings.modeling.proposal_generator import rpn
-from RestructModelings.modeling.roi_heads.mask_head import mask_rcnn_inference
-from RestructModelings.structures import Boxes, ImageList, Instances, Keypoints
+from src.RestructModelings.layers import ShapeSpec, cat
+from src.RestructModelings.layers.roi_align_rotated import ROIAlignRotated
+from src.RestructModelings.modeling import poolers
+from src.RestructModelings.modeling.proposal_generator import rpn
+from src.RestructModelings.modeling.roi_heads.mask_head import mask_rcnn_inference
+from src.RestructModelings.structures import Boxes, ImageList, Instances, Keypoints
 
 from .shared import alias, to_device
 

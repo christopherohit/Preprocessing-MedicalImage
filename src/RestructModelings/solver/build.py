@@ -11,7 +11,7 @@ from fvcore.common.param_scheduler import (
     StepWithFixedGammaParamScheduler,
 )
 
-from RestructModelings.config import CfgNode
+from src.RestructModelings.config import CfgNode
 
 from .lr_scheduler import LRMultiplier, WarmupParamScheduler
 

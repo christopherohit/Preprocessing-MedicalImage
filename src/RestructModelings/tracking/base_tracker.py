@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Copyright 2004-present Facebook. All Rights Reserved.
-from RestructModelings.config import configurable
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.config import configurable
+from src.RestructModelings.utils.registry import Registry
 
 from ..config.config import CfgNode as CfgNode_
 from ..structures import Instances

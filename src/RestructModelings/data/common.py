@@ -7,7 +7,7 @@ import random
 import torch.utils.data as data
 from torch.utils.data.sampler import Sampler
 
-from RestructModelings.utils.serialize import PicklableWrapper
+from src.RestructModelings.utils.serialize import PicklableWrapper
 
 __all__ = ["MapDataset", "DatasetFromList", "AspectRatioGroupedDataset", "ToIterableDataset"]
 

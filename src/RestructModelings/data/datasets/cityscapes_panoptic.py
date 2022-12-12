@@ -2,9 +2,9 @@ import json
 import logging
 import os
 
-from RestructModelings.data import DatasetCatalog, MetadataCatalog
-from RestructModelings.data.datasets.builtin_meta import CITYSCAPES_CATEGORIES
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.data import DatasetCatalog, MetadataCatalog
+from src.RestructModelings.data.datasets.builtin_meta import CITYSCAPES_CATEGORIES
+from src.RestructModelings.utils.file_io import PathManager
 
 """
 This file contains functions to register the Cityscapes panoptic dataset to the DatasetCatalog.

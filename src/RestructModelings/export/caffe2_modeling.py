@@ -5,10 +5,10 @@ import struct
 import types
 import torch
 
-from RestructModelings.modeling import meta_arch
-from RestructModelings.modeling.box_regression import Box2BoxTransform
-from RestructModelings.modeling.roi_heads import keypoint_head
-from RestructModelings.structures import Boxes, ImageList, Instances, RotatedBoxes
+from src.RestructModelings.modeling import meta_arch
+from src.RestructModelings.modeling.box_regression import Box2BoxTransform
+from src.RestructModelings.modeling.roi_heads import keypoint_head
+from src.RestructModelings.structures import Boxes, ImageList, Instances, RotatedBoxes
 
 from .c10 import Caffe2Compatible
 from .caffe2_patch import ROIHeadsPatcher, patch_generalized_rcnn

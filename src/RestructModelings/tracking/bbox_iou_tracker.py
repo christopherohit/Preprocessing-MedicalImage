@@ -5,9 +5,9 @@ import numpy as np
 from typing import List
 import torch
 
-from RestructModelings.config import configurable
-from RestructModelings.structures import Boxes, Instances
-from RestructModelings.structures.boxes import pairwise_iou
+from src.RestructModelings.config import configurable
+from src.RestructModelings.structures import Boxes, Instances
+from src.RestructModelings.structures.boxes import pairwise_iou
 
 from ..config.config import CfgNode as CfgNode_
 from .base_tracker import TRACKER_HEADS_REGISTRY, BaseTracker

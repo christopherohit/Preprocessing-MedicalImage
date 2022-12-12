@@ -2,7 +2,7 @@ import math
 from typing import List, Tuple
 import torch
 
-from RestructModelings.layers.rotated_boxes import pairwise_iou_rotated
+from src.RestructModelings.layers.rotated_boxes import pairwise_iou_rotated
 
 from .boxes import Boxes
 

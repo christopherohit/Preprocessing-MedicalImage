@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Optional, Tuple
 import torch
 from torch import device
 from torch.nn import functional as F
-from RestructModelings.layers.wrappers import move_device_like, shapes_to_tensor
+from src.RestructModelings.layers.wrappers import move_device_like, shapes_to_tensor
 
 
 class ImageList(object):

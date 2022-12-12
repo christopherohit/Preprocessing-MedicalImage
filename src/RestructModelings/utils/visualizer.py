@@ -12,9 +12,9 @@ import torch
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 from PIL import Image
 
-from RestructModelings.data import MetadataCatalog
-from RestructModelings.structures import BitMasks, Boxes, BoxMode, Keypoints, PolygonMasks, RotatedBoxes
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.data import MetadataCatalog
+from src.RestructModelings.structures import BitMasks, Boxes, BoxMode, Keypoints, PolygonMasks, RotatedBoxes
+from src.RestructModelings.utils.file_io import PathManager
 
 from .colormap import random_color
 

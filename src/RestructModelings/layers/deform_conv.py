@@ -7,7 +7,7 @@ from torch.autograd.function import once_differentiable
 from torch.nn.modules.utils import _pair
 from torchvision.ops import deform_conv2d
 
-from RestructModelings.utils.develop import create_dummy_class, create_dummy_func
+from src.RestructModelings.utils.develop import create_dummy_class, create_dummy_func
 
 from .wrappers import _NewEmptyTensorOp
 

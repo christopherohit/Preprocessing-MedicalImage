@@ -9,9 +9,9 @@ import torch
 from torch import nn
 
 # need some explicit imports due to https://github.com/pytorch/pytorch/issues/38964
-import RestructModelings  # noqa F401
-from RestructModelings.structures import Boxes, Instances
-from RestructModelings.utils.env import _import_file
+import src.RestructModelings  # noqa F401
+from src.RestructModelings.structures import Boxes, Instances
+from src.RestructModelings.utils.env import _import_file
 
 _counter = 0
 
@@ -295,8 +295,8 @@ from torch import Tensor
 import typing
 from typing import *
 
-import RestructModelings
-from RestructModelings.structures import Boxes, Instances
+import src.RestructModelings
+from src.RestructModelings.structures import Boxes, Instances
 
 """
 
@@ -346,7 +346,7 @@ def patch_nonscriptable_classes():
     # __prepare_scriptable__ can also be added to models for easier maintenance.
     # But it complicates the clean model code.
 
-    from RestructModelings.modeling.backbone import ResNet, FPN
+    from src.RestructModelings.modeling.backbone import ResNet, FPN
 
     # Due to https://github.com/pytorch/pytorch/issues/36061,
     # we change backbone to use ModuleList for scripting.
@@ -374,7 +374,7 @@ def patch_nonscriptable_classes():
 
     # Annotate some attributes to be constants for the purpose of scripting,
     # even though they are not constants in eager mode.
-    from RestructModelings.modeling.roi_heads import StandardROIHeads
+    from src.RestructModelings.modeling.roi_heads import StandardROIHeads
 
     if hasattr(StandardROIHeads, "__annotations__"):
         # copy first to avoid editing annotations of base class

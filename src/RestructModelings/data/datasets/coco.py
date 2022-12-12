@@ -11,8 +11,8 @@ from fvcore.common.timer import Timer
 from iopath.common.file_io import file_lock
 from PIL import Image
 
-from RestructModelings.structures import Boxes, BoxMode, PolygonMasks, RotatedBoxes
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.structures import Boxes, BoxMode, PolygonMasks, RotatedBoxes
+from src.RestructModelings.utils.file_io import PathManager
 
 from .. import DatasetCatalog, MetadataCatalog
 
@@ -514,9 +514,9 @@ if __name__ == "__main__":
         "dataset_name" can be "coco_2014_minival_100", or other
         pre-registered ones
     """
-    from RestructModelings.utils.logger import setup_logger
-    from RestructModelings.utils.visualizer import Visualizer
-    import RestructModelings.data.datasets  # noqa # add pre-defined metadata
+    from src.RestructModelings.utils.logger import setup_logger
+    from src.RestructModelings.utils.visualizer import Visualizer
+    import src.RestructModelings.data.datasets  # noqa # add pre-defined metadata
     import sys
 
     logger = setup_logger(name=__name__)

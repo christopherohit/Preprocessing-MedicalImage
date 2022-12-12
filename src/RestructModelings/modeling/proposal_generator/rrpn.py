@@ -3,10 +3,10 @@ import logging
 from typing import Dict, List
 import torch
 
-from RestructModelings.config import configurable
-from RestructModelings.layers import ShapeSpec, batched_nms_rotated, cat
-from RestructModelings.structures import Instances, RotatedBoxes, pairwise_iou_rotated
-from RestructModelings.utils.memory import retry_if_cuda_oom
+from src.RestructModelings.config import configurable
+from src.RestructModelings.layers import ShapeSpec, batched_nms_rotated, cat
+from src.RestructModelings.structures import Instances, RotatedBoxes, pairwise_iou_rotated
+from src.RestructModelings.utils.memory import retry_if_cuda_oom
 
 from ..box_regression import Box2BoxTransformRotated
 from .build import PROPOSAL_GENERATOR_REGISTRY

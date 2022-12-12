@@ -2,8 +2,8 @@ import copy
 import json
 import os
 
-from RestructModelings.data import DatasetCatalog, MetadataCatalog
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.data import DatasetCatalog, MetadataCatalog
+from src.RestructModelings.utils.file_io import PathManager
 
 from .coco import load_coco_json, load_sem_seg
 
@@ -200,9 +200,9 @@ if __name__ == "__main__":
         "dataset_name" can be "coco_2017_train_panoptic", or other
         pre-registered ones
     """
-    from RestructModelings.utils.logger import setup_logger
-    from RestructModelings.utils.visualizer import Visualizer
-    import RestructModelings.data.datasets  # noqa # add pre-defined metadata
+    from src.RestructModelings.utils.logger import setup_logger
+    from src.RestructModelings.utils.visualizer import Visualizer
+    import src.RestructModelings.data.datasets  # noqa # add pre-defined metadata
     import sys
     from PIL import Image
     import numpy as np

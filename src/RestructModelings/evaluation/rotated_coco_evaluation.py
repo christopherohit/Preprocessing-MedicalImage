@@ -5,8 +5,8 @@ import os
 import torch
 from pycocotools.cocoeval import COCOeval, maskUtils
 
-from RestructModelings.structures import BoxMode, RotatedBoxes, pairwise_iou_rotated
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.structures import BoxMode, RotatedBoxes, pairwise_iou_rotated
+from src.RestructModelings.utils.file_io import PathManager
 
 from .coco_evaluation import COCOEvaluator
 

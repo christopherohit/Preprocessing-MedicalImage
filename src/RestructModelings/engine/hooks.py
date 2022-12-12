@@ -17,11 +17,11 @@ from fvcore.common.param_scheduler import ParamScheduler
 from fvcore.common.timer import Timer
 from fvcore.nn.precise_bn import get_bn_modules, update_bn_stats
 
-import RestructModelings.utils.comm as comm
-from RestructModelings.evaluation.testing import flatten_results_dict
-from RestructModelings.solver import LRMultiplier
-from RestructModelings.utils.events import EventStorage, EventWriter
-from RestructModelings.utils.file_io import PathManager
+import src.RestructModelings.utils.comm as comm
+from src.RestructModelings.evaluation.testing import flatten_results_dict
+from src.RestructModelings.solver import LRMultiplier
+from src.RestructModelings.utils.events import EventStorage, EventWriter
+from src.RestructModelings.utils.file_io import PathManager
 
 from .train_loop import HookBase
 

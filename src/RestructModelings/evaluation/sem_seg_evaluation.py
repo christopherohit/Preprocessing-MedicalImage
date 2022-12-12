@@ -9,9 +9,9 @@ import pycocotools.mask as mask_util
 import torch
 from PIL import Image
 
-from RestructModelings.data import DatasetCatalog, MetadataCatalog
-from RestructModelings.utils.comm import all_gather, is_main_process, synchronize
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.data import DatasetCatalog, MetadataCatalog
+from src.RestructModelings.utils.comm import all_gather, is_main_process, synchronize
+from src.RestructModelings.utils.file_io import PathManager
 
 from .evaluator import DatasetEvaluator
 

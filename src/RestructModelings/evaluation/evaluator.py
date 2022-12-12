@@ -7,8 +7,8 @@ from typing import List, Union
 import torch
 from torch import nn
 
-from RestructModelings.utils.comm import get_world_size, is_main_process
-from RestructModelings.utils.logger import log_every_n_seconds
+from src.RestructModelings.utils.comm import get_world_size, is_main_process
+from src.RestructModelings.utils.logger import log_every_n_seconds
 
 
 class DatasetEvaluator:

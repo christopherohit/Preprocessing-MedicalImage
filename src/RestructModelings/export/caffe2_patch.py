@@ -3,10 +3,10 @@ import contextlib
 from unittest import mock
 import torch
 
-from RestructModelings.modeling import poolers
-from RestructModelings.modeling.proposal_generator import rpn
-from RestructModelings.modeling.roi_heads import keypoint_head, mask_head
-from RestructModelings.modeling.roi_heads.fast_rcnn import FastRCNNOutputLayers
+from src.RestructModelings.modeling import poolers
+from src.RestructModelings.modeling.proposal_generator import rpn
+from src.RestructModelings.modeling.roi_heads import keypoint_head, mask_head
+from src.RestructModelings.modeling.roi_heads.fast_rcnn import FastRCNNOutputLayers
 
 from .c10 import (
     Caffe2Compatible,

@@ -14,18 +14,18 @@ from pycocotools.coco import COCO
 from pycocotools.cocoeval import COCOeval
 from tabulate import tabulate
 
-import RestructModelings.utils.comm as comm
-from RestructModelings.config import CfgNode
-from RestructModelings.data import MetadataCatalog
-from RestructModelings.data.datasets.coco import convert_to_coco_json
-from RestructModelings.structures import Boxes, BoxMode, pairwise_iou
-from RestructModelings.utils.file_io import PathManager
-from RestructModelings.utils.logger import create_small_table
+import src.RestructModelings.utils.comm as comm
+from src.RestructModelings.config import CfgNode
+from src.RestructModelings.data import MetadataCatalog
+from src.RestructModelings.data.datasets.coco import convert_to_coco_json
+from src.RestructModelings.structures import Boxes, BoxMode, pairwise_iou
+from src.RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.utils.logger import create_small_table
 
 from .evaluator import DatasetEvaluator
 
 try:
-    from RestructModelings.evaluation.fast_eval_api import COCOeval_opt
+    from src.RestructModelings.evaluation.fast_eval_api import COCOeval_opt
 except ImportError:
     COCOeval_opt = COCOeval
 

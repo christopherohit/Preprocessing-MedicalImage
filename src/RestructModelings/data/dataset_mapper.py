@@ -4,7 +4,7 @@ import numpy as np
 from typing import List, Optional, Union
 import torch
 
-from RestructModelings.config import configurable
+from src.RestructModelings.config import configurable
 
 from . import detection_utils as utils
 from . import transforms as T

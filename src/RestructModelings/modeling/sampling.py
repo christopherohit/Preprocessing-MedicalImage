@@ -1,6 +1,6 @@
 import torch
 
-from RestructModelings.layers import nonzero_tuple
+from src.RestructModelings.layers import nonzero_tuple
 
 __all__ = ["subsample_labels"]
 

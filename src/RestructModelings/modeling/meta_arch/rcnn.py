@@ -4,12 +4,12 @@ from typing import Dict, List, Optional, Tuple
 import torch
 from torch import nn
 
-from RestructModelings.config import configurable
-from RestructModelings.data.detection_utils import convert_image_to_rgb
-from RestructModelings.layers import move_device_like
-from RestructModelings.structures import ImageList, Instances
-from RestructModelings.utils.events import get_event_storage
-from RestructModelings.utils.logger import log_first_n
+from src.RestructModelings.config import configurable
+from src.RestructModelings.data.detection_utils import convert_image_to_rgb
+from src.RestructModelings.layers import move_device_like
+from src.RestructModelings.structures import ImageList, Instances
+from src.RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.utils.logger import log_first_n
 
 from ..backbone import Backbone, build_backbone
 from ..postprocessing import detector_postprocess

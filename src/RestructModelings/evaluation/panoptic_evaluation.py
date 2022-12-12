@@ -11,9 +11,9 @@ from typing import Optional
 from PIL import Image
 from tabulate import tabulate
 
-from RestructModelings.data import MetadataCatalog
-from RestructModelings.utils import comm
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.data import MetadataCatalog
+from src.RestructModelings.utils import comm
+from src.RestructModelings.utils.file_io import PathManager
 
 from .evaluator import DatasetEvaluator
 
@@ -177,7 +177,7 @@ def _print_panoptic_results(pq_res):
 
 
 if __name__ == "__main__":
-    from RestructModelings.utils.logger import setup_logger
+    from src.RestructModelings.utils.logger import setup_logger
 
     logger = setup_logger()
     import argparse

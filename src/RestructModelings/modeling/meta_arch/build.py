@@ -1,7 +1,7 @@
 import torch
 
-from RestructModelings.utils.logger import _log_api_usage
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.utils.logger import _log_api_usage
+from src.RestructModelings.utils.registry import Registry
 
 META_ARCH_REGISTRY = Registry("META_ARCH")  # noqa F401 isort:skip
 META_ARCH_REGISTRY.__doc__ = """

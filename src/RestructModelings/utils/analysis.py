@@ -6,7 +6,7 @@ import fvcore
 from fvcore.nn import activation_count, flop_count, parameter_count, parameter_count_table
 from torch import nn
 
-from RestructModelings.export import TracingAdapter
+from src.RestructModelings.export import TracingAdapter
 
 __all__ = [
     "activation_count_operators",

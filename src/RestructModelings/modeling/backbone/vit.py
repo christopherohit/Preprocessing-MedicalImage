@@ -4,8 +4,8 @@ import fvcore.nn.weight_init as weight_init
 import torch
 import torch.nn as nn
 
-from RestructModelings.layers import CNNBlockBase, Conv2d, get_norm
-from RestructModelings.modeling.backbone.fpn import _assert_strides_are_log2_contiguous
+from src.RestructModelings.layers import CNNBlockBase, Conv2d, get_norm
+from src.RestructModelings.modeling.backbone.fpn import _assert_strides_are_log2_contiguous
 
 from fairscale.nn.checkpoint import checkpoint_wrapper
 from timm.models.layers import DropPath, Mlp, trunc_normal_

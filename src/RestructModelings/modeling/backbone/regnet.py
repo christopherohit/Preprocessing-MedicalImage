@@ -9,7 +9,7 @@ model loading.
 
 import numpy as np
 from torch import nn
-from RestructModelings.layers import CNNBlockBase, ShapeSpec, get_norm
+from src.RestructModelings.layers import CNNBlockBase, ShapeSpec, get_norm
 
 from .backbone import Backbone
 

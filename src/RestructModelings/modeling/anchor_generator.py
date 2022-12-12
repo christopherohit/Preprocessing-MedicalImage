@@ -4,10 +4,10 @@ from typing import List
 import torch
 from torch import nn
 
-from RestructModelings.config import configurable
-from RestructModelings.layers import ShapeSpec, move_device_like
-from RestructModelings.structures import Boxes, RotatedBoxes
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.config import configurable
+from src.RestructModelings.layers import ShapeSpec, move_device_like
+from src.RestructModelings.structures import Boxes, RotatedBoxes
+from src.RestructModelings.utils.registry import Registry
 
 ANCHOR_GENERATOR_REGISTRY = Registry("ANCHOR_GENERATOR")
 ANCHOR_GENERATOR_REGISTRY.__doc__ = """

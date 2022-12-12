@@ -6,8 +6,8 @@ import pycocotools.mask as mask_util
 import torch
 from torch import device
 
-from RestructModelings.layers.roi_align import ROIAlign
-from RestructModelings.utils.memory import retry_if_cuda_oom
+from src.RestructModelings.layers.roi_align import ROIAlign
+from src.RestructModelings.utils.memory import retry_if_cuda_oom
 
 from .boxes import Boxes
 
@@ -520,7 +520,7 @@ class ROIMasks:
         """
         Args: see documentation of :func:`paste_masks_in_image`.
         """
-        from RestructModelings.layers.mask_ops import paste_masks_in_image, _paste_masks_tensor_shape
+        from src.RestructModelings.layers.mask_ops import paste_masks_in_image, _paste_masks_tensor_shape
 
         if torch.jit.is_tracing():
             if isinstance(height, torch.Tensor):

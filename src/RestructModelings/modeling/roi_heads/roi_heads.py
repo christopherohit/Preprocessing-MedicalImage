@@ -5,11 +5,11 @@ from typing import Dict, List, Optional, Tuple
 import torch
 from torch import nn
 
-from RestructModelings.config import configurable
-from RestructModelings.layers import ShapeSpec, nonzero_tuple
-from RestructModelings.structures import Boxes, ImageList, Instances, pairwise_iou
-from RestructModelings.utils.events import get_event_storage
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.config import configurable
+from src.RestructModelings.layers import ShapeSpec, nonzero_tuple
+from src.RestructModelings.structures import Boxes, ImageList, Instances, pairwise_iou
+from src.RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.utils.registry import Registry
 
 from ..backbone.resnet import BottleneckBlock, ResNet
 from ..matcher import Matcher

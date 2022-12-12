@@ -4,7 +4,7 @@ import dataclasses
 import logging
 from typing import Any
 
-from RestructModelings.utils.registry import _convert_target_to_string, locate
+from src.RestructModelings.utils.registry import _convert_target_to_string, locate
 
 __all__ = ["dump_dataclass", "instantiate"]
 

@@ -1,5 +1,5 @@
-from RestructModelings.layers import ShapeSpec
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.layers import ShapeSpec
+from src.RestructModelings.utils.registry import Registry
 
 from .backbone import Backbone
 

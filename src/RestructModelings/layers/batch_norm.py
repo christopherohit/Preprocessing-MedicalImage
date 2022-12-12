@@ -4,7 +4,7 @@ from fvcore.nn.distributed import differentiable_all_reduce
 from torch import nn
 from torch.nn import functional as F
 
-from RestructModelings.utils import comm, env
+from src.RestructModelings.utils import comm, env
 
 from .wrappers import BatchNorm2d
 

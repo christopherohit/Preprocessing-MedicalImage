@@ -6,7 +6,7 @@ import torch
 import tqdm
 from fvcore.common.timer import Timer
 
-from RestructModelings.utils import comm
+from src.RestructModelings.utils import comm
 
 from .build import build_batch_data_loader
 from .common import DatasetFromList, MapDataset

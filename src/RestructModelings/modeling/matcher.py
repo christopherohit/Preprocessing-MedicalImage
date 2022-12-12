@@ -1,7 +1,7 @@
 from typing import List
 import torch
 
-from RestructModelings.layers import nonzero_tuple
+from src.RestructModelings.layers import nonzero_tuple
 
 
 # TODO: the name is too general

@@ -8,10 +8,10 @@ from itertools import chain
 import pycocotools.mask as mask_util
 from PIL import Image
 
-from RestructModelings.structures import BoxMode
-from RestructModelings.utils.comm import get_world_size
-from RestructModelings.utils.file_io import PathManager
-from RestructModelings.utils.logger import setup_logger
+from src.RestructModelings.structures import BoxMode
+from src.RestructModelings.utils.comm import get_world_size
+from src.RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.utils.logger import setup_logger
 
 try:
     import cv2  # noqa
@@ -292,8 +292,8 @@ if __name__ == "__main__":
     parser.add_argument("gt_dir")
     parser.add_argument("--type", choices=["instance", "semantic"], default="instance")
     args = parser.parse_args()
-    from RestructModelings.data.catalog import Metadata
-    from RestructModelings.utils.visualizer import Visualizer
+    from src.RestructModelings.data.catalog import Metadata
+    from src.RestructModelings.utils.visualizer import Visualizer
     from cityscapesscripts.helpers.labels import labels
 
     logger = setup_logger(name=__name__)

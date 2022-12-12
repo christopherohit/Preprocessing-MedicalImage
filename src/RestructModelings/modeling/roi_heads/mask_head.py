@@ -4,12 +4,12 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from RestructModelings.config import configurable
-from RestructModelings.layers import Conv2d, ConvTranspose2d, ShapeSpec, cat, get_norm
-from RestructModelings.layers.wrappers import move_device_like
-from RestructModelings.structures import Instances
-from RestructModelings.utils.events import get_event_storage
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.config import configurable
+from src.RestructModelings.layers import Conv2d, ConvTranspose2d, ShapeSpec, cat, get_norm
+from src.RestructModelings.layers.wrappers import move_device_like
+from src.RestructModelings.structures import Instances
+from src.RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.utils.registry import Registry
 
 __all__ = [
     "BaseMaskRCNNHead",

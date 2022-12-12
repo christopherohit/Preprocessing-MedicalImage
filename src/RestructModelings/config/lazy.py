@@ -15,8 +15,8 @@ import cloudpickle
 import yaml
 from omegaconf import DictConfig, ListConfig, OmegaConf, SCMode
 
-from RestructModelings.utils.file_io import PathManager
-from RestructModelings.utils.registry import _convert_target_to_string
+from src.RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.utils.registry import _convert_target_to_string
 
 __all__ = ["LazyCall", "LazyConfig"]
 

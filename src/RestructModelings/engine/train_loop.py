@@ -7,9 +7,9 @@ from typing import List, Mapping, Optional
 import torch
 from torch.nn.parallel import DataParallel, DistributedDataParallel
 
-import RestructModelings.utils.comm as comm
-from RestructModelings.utils.events import EventStorage, get_event_storage
-from RestructModelings.utils.logger import _log_api_usage
+import src.RestructModelings.utils.comm as comm
+from src.RestructModelings.utils.events import EventStorage, get_event_storage
+from src.RestructModelings.utils.logger import _log_api_usage
 
 __all__ = ["HookBase", "TrainerBase", "SimpleTrainer", "AMPTrainer"]
 

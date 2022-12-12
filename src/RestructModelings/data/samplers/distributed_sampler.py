@@ -6,7 +6,7 @@ from typing import Optional
 import torch
 from torch.utils.data.sampler import Sampler
 
-from RestructModelings.utils import comm
+from src.RestructModelings.utils import comm
 
 logger = logging.getLogger(__name__)
 

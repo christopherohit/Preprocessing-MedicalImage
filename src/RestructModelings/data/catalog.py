@@ -4,7 +4,7 @@ import types
 from collections import UserDict
 from typing import List
 
-from RestructModelings.utils.logger import log_first_n
+from src.RestructModelings.utils.logger import log_first_n
 
 __all__ = ["DatasetCatalog", "MetadataCatalog", "Metadata"]
 

@@ -4,8 +4,8 @@ from typing import Callable, List, Optional, Tuple
 import torch
 from torch import nn
 
-from RestructModelings.structures import Boxes, Instances, ROIMasks
-from RestructModelings.utils.registry import _convert_target_to_string, locate
+from src.RestructModelings.structures import Boxes, Instances, ROIMasks
+from src.RestructModelings.utils.registry import _convert_target_to_string, locate
 
 from .torchscript_patch import patch_builtin_len
 

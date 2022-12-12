@@ -4,7 +4,7 @@ import torch
 import torch.distributed as dist
 import torch.multiprocessing as mp
 
-from RestructModelings.utils import comm
+from src.RestructModelings.utils import comm
 
 __all__ = ["DEFAULT_TIMEOUT", "launch"]
 

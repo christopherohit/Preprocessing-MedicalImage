@@ -5,9 +5,9 @@ import os
 import xml.etree.ElementTree as ET
 from typing import List, Tuple, Union
 
-from RestructModelings.data import DatasetCatalog, MetadataCatalog
-from RestructModelings.structures import BoxMode
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.data import DatasetCatalog, MetadataCatalog
+from src.RestructModelings.structures import BoxMode
+from src.RestructModelings.utils.file_io import PathManager
 
 __all__ = ["load_voc_instances", "register_pascal_voc"]
 

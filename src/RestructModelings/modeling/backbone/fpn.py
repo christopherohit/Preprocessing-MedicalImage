@@ -4,7 +4,7 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-from RestructModelings.layers import Conv2d, ShapeSpec, get_norm
+from src.RestructModelings.layers import Conv2d, ShapeSpec, get_norm
 
 from .backbone import Backbone
 from .build import BACKBONE_REGISTRY

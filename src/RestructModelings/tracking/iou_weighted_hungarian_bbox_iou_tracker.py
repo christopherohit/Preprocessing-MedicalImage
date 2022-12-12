@@ -4,8 +4,8 @@
 import numpy as np
 from typing import List
 
-from RestructModelings.config import CfgNode as CfgNode_
-from RestructModelings.config import configurable
+from src.RestructModelings.config import CfgNode as CfgNode_
+from src.RestructModelings.config import configurable
 
 from .base_tracker import TRACKER_HEADS_REGISTRY
 from .vanilla_hungarian_bbox_iou_tracker import VanillaHungarianBBoxIOUTracker

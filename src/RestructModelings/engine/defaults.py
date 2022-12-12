@@ -20,28 +20,28 @@ from fvcore.nn.precise_bn import get_bn_modules
 from omegaconf import OmegaConf
 from torch.nn.parallel import DistributedDataParallel
 
-import RestructModelings.data.transforms as T
-from RestructModelings.checkpoint import DetectionCheckpointer
-from RestructModelings.config import CfgNode, LazyConfig
-from RestructModelings.data import (
+import src.RestructModelings.data.transforms as T
+from src.RestructModelings.checkpoint import DetectionCheckpointer
+from src.RestructModelings.config import CfgNode, LazyConfig
+from src.RestructModelings.data import (
     MetadataCatalog,
     build_detection_test_loader,
     build_detection_train_loader,
 )
-from RestructModelings.evaluation import (
+from src.RestructModelings.evaluation import (
     DatasetEvaluator,
     inference_on_dataset,
     print_csv_format,
     verify_results,
 )
-from RestructModelings.modeling import build_model
-from RestructModelings.solver import build_lr_scheduler, build_optimizer
-from RestructModelings.utils import comm
-from RestructModelings.utils.collect_env import collect_env_info
-from RestructModelings.utils.env import seed_all_rng
-from RestructModelings.utils.events import CommonMetricPrinter, JSONWriter, TensorboardXWriter
-from RestructModelings.utils.file_io import PathManager
-from RestructModelings.utils.logger import setup_logger
+from src.RestructModelings.modeling import build_model
+from src.RestructModelings.solver import build_lr_scheduler, build_optimizer
+from src.RestructModelings.utils import comm
+from src.RestructModelings.utils.collect_env import collect_env_info
+from src.RestructModelings.utils.env import seed_all_rng
+from src.RestructModelings.utils.events import CommonMetricPrinter, JSONWriter, TensorboardXWriter
+from src.RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.utils.logger import setup_logger
 
 from . import hooks
 from .train_loop import AMPTrainer, SimpleTrainer, TrainerBase

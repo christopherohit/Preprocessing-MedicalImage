@@ -9,12 +9,12 @@ import torch.utils.data as torchdata
 from tabulate import tabulate
 from termcolor import colored
 
-from RestructModelings.config import configurable
-from RestructModelings.structures import BoxMode
-from RestructModelings.utils.comm import get_world_size
-from RestructModelings.utils.env import seed_all_rng
-from RestructModelings.utils.file_io import PathManager
-from RestructModelings.utils.logger import _log_api_usage, log_first_n
+from src.RestructModelings.config import configurable
+from src.RestructModelings.structures import BoxMode
+from src.RestructModelings.utils.comm import get_world_size
+from src.RestructModelings.utils.env import seed_all_rng
+from src.RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.utils.logger import _log_api_usage, log_first_n
 
 from .catalog import DatasetCatalog, MetadataCatalog
 from .common import AspectRatioGroupedDataset, DatasetFromList, MapDataset, ToIterableDataset

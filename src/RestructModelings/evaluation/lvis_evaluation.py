@@ -7,12 +7,12 @@ import pickle
 from collections import OrderedDict
 import torch
 
-import RestructModelings.utils.comm as comm
-from RestructModelings.config import CfgNode
-from RestructModelings.data import MetadataCatalog
-from RestructModelings.structures import Boxes, BoxMode, pairwise_iou
-from RestructModelings.utils.file_io import PathManager
-from RestructModelings.utils.logger import create_small_table
+import src.RestructModelings.utils.comm as comm
+from src.RestructModelings.config import CfgNode
+from src.RestructModelings.data import MetadataCatalog
+from src.RestructModelings.structures import Boxes, BoxMode, pairwise_iou
+from src.RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.utils.logger import create_small_table
 
 from .coco_evaluation import instances_to_coco_json
 from .evaluator import DatasetEvaluator

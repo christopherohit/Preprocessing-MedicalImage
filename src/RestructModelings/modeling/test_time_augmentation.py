@@ -8,15 +8,15 @@ from fvcore.transforms import HFlipTransform, NoOpTransform
 from torch import nn
 from torch.nn.parallel import DistributedDataParallel
 
-from RestructModelings.config import configurable
-from RestructModelings.data.detection_utils import read_image
-from RestructModelings.data.transforms import (
+from src.RestructModelings.config import configurable
+from src.RestructModelings.data.detection_utils import read_image
+from src.RestructModelings.data.transforms import (
     RandomFlip,
     ResizeShortestEdge,
     ResizeTransform,
     apply_augmentations,
 )
-from RestructModelings.structures import Boxes, Instances
+from src.RestructModelings.structures import Boxes, Instances
 
 from .meta_arch import GeneralizedRCNN
 from .postprocessing import detector_postprocess

@@ -2,7 +2,7 @@ from abc import ABCMeta, abstractmethod
 from typing import Dict
 import torch.nn as nn
 
-from RestructModelings.layers import ShapeSpec
+from src.RestructModelings.layers import ShapeSpec
 
 __all__ = ["Backbone"]
 

@@ -3,11 +3,11 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from RestructModelings.config import configurable
-from RestructModelings.layers import Conv2d, ConvTranspose2d, cat, interpolate
-from RestructModelings.structures import Instances, heatmaps_to_keypoints
-from RestructModelings.utils.events import get_event_storage
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.config import configurable
+from src.RestructModelings.layers import Conv2d, ConvTranspose2d, cat, interpolate
+from src.RestructModelings.structures import Instances, heatmaps_to_keypoints
+from src.RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.utils.registry import Registry
 
 _TOTAL_SKIPPED = 0
 

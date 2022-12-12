@@ -4,9 +4,9 @@ import torch
 from torch import nn
 from torchvision.ops import RoIPool
 
-from RestructModelings.layers import ROIAlign, ROIAlignRotated, cat, nonzero_tuple, shapes_to_tensor
-from RestructModelings.structures import Boxes
-from RestructModelings.utils.tracing import assert_fx_safe, is_fx_tracing
+from src.RestructModelings.layers import ROIAlign, ROIAlignRotated, cat, nonzero_tuple, shapes_to_tensor
+from src.RestructModelings.structures import Boxes
+from src.RestructModelings.utils.tracing import assert_fx_safe, is_fx_tracing
 
 """
 To export ROIPooler to torchscript, in this file, variables that should be annotated with

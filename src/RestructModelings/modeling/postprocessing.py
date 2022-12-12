@@ -1,7 +1,7 @@
 import torch
 from torch.nn import functional as F
 
-from RestructModelings.structures import Instances, ROIMasks
+from src.RestructModelings.structures import Instances, ROIMasks
 
 
 # perhaps should rename to "resize_instance"

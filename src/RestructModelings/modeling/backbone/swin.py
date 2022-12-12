@@ -18,7 +18,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as checkpoint
 
-from RestructModelings.modeling.backbone.backbone import Backbone
+from src.RestructModelings.modeling.backbone.backbone import Backbone
 
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 

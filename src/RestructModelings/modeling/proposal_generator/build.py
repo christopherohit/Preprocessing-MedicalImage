@@ -1,4 +1,4 @@
-from RestructModelings.utils.registry import Registry
+from src.RestructModelings.utils.registry import Registry
 
 PROPOSAL_GENERATOR_REGISTRY = Registry("PROPOSAL_GENERATOR")
 PROPOSAL_GENERATOR_REGISTRY.__doc__ = """

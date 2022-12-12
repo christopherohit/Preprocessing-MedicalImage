@@ -9,7 +9,7 @@ from typing import Optional
 import torch
 from fvcore.common.history_buffer import HistoryBuffer
 
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.utils.file_io import PathManager
 
 __all__ = [
     "get_event_storage",

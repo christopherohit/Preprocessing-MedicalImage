@@ -17,7 +17,7 @@ __all__ = [
 ]
 
 
-from RestructModelings.utils.env import fixup_module_metadata
+from src.RestructModelings.utils.env import fixup_module_metadata
 
 fixup_module_metadata(__name__, globals(), __all__)
 del fixup_module_metadata

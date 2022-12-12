@@ -3,10 +3,10 @@ import torch
 from torch import nn
 from torch.autograd.function import Function
 
-from RestructModelings.config import configurable
-from RestructModelings.layers import ShapeSpec
-from RestructModelings.structures import Boxes, Instances, pairwise_iou
-from RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.config import configurable
+from src.RestructModelings.layers import ShapeSpec
+from src.RestructModelings.structures import Boxes, Instances, pairwise_iou
+from src.RestructModelings.utils.events import get_event_storage
 
 from ..box_regression import Box2BoxTransform
 from ..matcher import Matcher

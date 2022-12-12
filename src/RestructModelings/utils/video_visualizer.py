@@ -2,8 +2,8 @@ import numpy as np
 from typing import List
 import pycocotools.mask as mask_util
 
-from RestructModelings.structures import Instances
-from RestructModelings.utils.visualizer import (
+from src.RestructModelings.structures import Instances
+from src.RestructModelings.utils.visualizer import (
     ColorMode,
     Visualizer,
     _create_text_labels,

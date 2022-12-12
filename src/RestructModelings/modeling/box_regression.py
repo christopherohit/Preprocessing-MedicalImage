@@ -4,8 +4,8 @@ import torch
 from fvcore.nn import giou_loss, smooth_l1_loss
 from torch.nn import functional as F
 
-from RestructModelings.layers import cat, ciou_loss, diou_loss
-from RestructModelings.structures import Boxes
+from src.RestructModelings.layers import cat, ciou_loss, diou_loss
+from src.RestructModelings.structures import Boxes
 
 # Value for clamping large dw and dh predictions. The heuristic is that we clamp
 # such that dw and dh are no larger than what would transform a 16px box into a

@@ -4,12 +4,12 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from RestructModelings.config import configurable
-from RestructModelings.data.detection_utils import get_fed_loss_cls_weights
-from RestructModelings.layers import ShapeSpec, batched_nms, cat, cross_entropy, nonzero_tuple
-from RestructModelings.modeling.box_regression import Box2BoxTransform, _dense_box_regression_loss
-from RestructModelings.structures import Boxes, Instances
-from RestructModelings.utils.events import get_event_storage
+from src.RestructModelings.config import configurable
+from src.RestructModelings.data.detection_utils import get_fed_loss_cls_weights
+from src.RestructModelings.layers import ShapeSpec, batched_nms, cat, cross_entropy, nonzero_tuple
+from src.RestructModelings.modeling.box_regression import Box2BoxTransform, _dense_box_regression_loss
+from src.RestructModelings.structures import Boxes, Instances
+from src.RestructModelings.utils.events import get_event_storage
 
 __all__ = ["fast_rcnn_inference", "FastRCNNOutputLayers"]
 

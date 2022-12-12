@@ -2,9 +2,9 @@ import logging
 import os
 from fvcore.common.timer import Timer
 
-from RestructModelings.data import DatasetCatalog, MetadataCatalog
-from RestructModelings.structures import BoxMode
-from RestructModelings.utils.file_io import PathManager
+from src.RestructModelings.data import DatasetCatalog, MetadataCatalog
+from src.RestructModelings.structures import BoxMode
+from src.RestructModelings.utils.file_io import PathManager
 
 from .builtin_meta import _get_coco_instances_meta
 from .lvis_v0_5_categories import LVIS_CATEGORIES as LVIS_V0_5_CATEGORIES
@@ -219,10 +219,10 @@ if __name__ == "__main__":
     """
     import sys
     import numpy as np
-    from RestructModelings.utils.logger import setup_logger
+    from src.RestructModelings.utils.logger import setup_logger
     from PIL import Image
-    import RestructModelings.data.datasets  # noqa # add pre-defined metadata
-    from RestructModelings.utils.visualizer import Visualizer
+    import src.RestructModelings.data.datasets  # noqa # add pre-defined metadata
+    from src.RestructModelings.utils.visualizer import Visualizer
 
     logger = setup_logger(name=__name__)
     meta = MetadataCatalog.get(sys.argv[3])
