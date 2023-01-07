@@ -1,3 +1,4 @@
 /model/*
 __pycache__
 /results/*
+/home/ai_car/Preprocessing-MedicalImage/covid19-radiography-database/*
